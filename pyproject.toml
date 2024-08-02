@@ -1,0 +1,39 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyLimma"
+version = "1.0.2"
+description = "Differential expression analysis for microarray and RNA-seq data using linear models and empirical Bayes."
+readme = "README.md"
+authors = [{ name = "Ignacio Garach Vélez", email = "igarachv@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English"
+]
+keywords = ["bioinformatics", "differential-expression", "rnaseq", "microarray", "sequencing-data"]
+dependencies = [
+    "pandas >= 2.0.0",
+    "numpy >= 1.18.0",
+    "scipy >= 1.11.0",
+    "statsmodels >= 0.14.0",
+    "scikit-learn >= 1.2.0"
+]
+dynamic = ["version"]
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/nach00gar/pyLimma"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
